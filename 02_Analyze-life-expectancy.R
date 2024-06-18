@@ -20,7 +20,7 @@ library(broom)
 le_data <- read_csv("./data/Life-expectancy-by-state-long.csv")
 
 # Run a regression model with time coded using a linear term
-mod1 <- lm(LE ~ year, dat = le_data %>% filter(state == "California", race == "black", sex == "Female"))
+mod1 <- lm(LE ~ year, dat = le_data %>% filter(state == "Texas", race == "black"))
 
 # Regression output
 tidy(mod1)
